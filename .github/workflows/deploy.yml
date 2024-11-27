@@ -12,7 +12,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-      name: Lint code
+      - name: Lint code
         run: npm lint
   test:
     needs: lint
@@ -24,7 +24,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
             node-version: 20
-      name: Test project
+      - name: Test project
         run: npm test
   deploy:
     needs: test
@@ -36,5 +36,5 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-      name: Deploy project
+      - name: Deploy project
         run: echo "Deploying the project..."
