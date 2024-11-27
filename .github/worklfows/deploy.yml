@@ -31,4 +31,4 @@ jobs:
       - name: Setup Nodejs
         uses: actions/setup-node@v4
       name: Deploy project
-        run: echo "Deploying the project"
+        run: echo "Deploying the project..."
